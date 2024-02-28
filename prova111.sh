@@ -12,7 +12,6 @@ if [ $? -eq 0 ]
     else
         echo FAULT
 fi
-ls -l Nemo_6670.dat
 
 # Ottieni il percorso completo del file scaricato
 downloaded_file="$destination_folder/Nemo_6670.dat"
@@ -31,7 +30,7 @@ export DATA_FILE_PATH="$downloaded_file"
 echo "Percorso del file scaricato: $DATA_FILE_PATH"
 
 # Esegui il tuo script Python passando il percorso del file come argomento
-python3 ait_esame.py "$DATA_FILE_PATH"
+python3 ait_esame.py ""$HOME/Desktop/Directory_esame"
 
 # Verifica lo stato di uscita dello script Python
 if [ $? -eq 0 ]
