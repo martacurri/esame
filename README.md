@@ -10,7 +10,7 @@ Il file python "ait_esame.py": è diviso in tre parti. Nella prima parte viene r
 
 
 
-Per il corretto funzionamento dell'applicazione il lettore deve inizialmente copiare ed eseguire nel proprio terminale lo script bash numero 1 ("ait_script1.sh"). 
+Per il corretto funzionamento dell'applicazione il lettore deve inizialmente copiare ed eseguire nel proprio terminale sul proprio Desktop lo script bash numero 1 ("ait_script1.sh"). 
 
 Verrà creata nel proprio Desktop una cartella intitolata "Directory_esame", con all'interno i due file bash ed il file python. 
 
