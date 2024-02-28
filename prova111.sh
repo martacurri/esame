@@ -14,7 +14,8 @@ if [ $? -eq 0 ]
 fi
 
 # Ottieni il percorso completo del file scaricato
-downloaded_file="$destination_folder/Nemo_6670.dat"
+DATA_FILE_PATH=$(pwd)/Nemo_6670.dat
+echo "Percorso del file scaricato: $DATA_FILE_PATH"
 
 # Verifica se il file è stato scaricato correttamente
 if [ -e "$downloaded_file" ]
@@ -25,11 +26,8 @@ if [ -e "$downloaded_file" ]
         exit 1
 fi
 
-# Utilizza il percorso completo del file scaricato come variabile di ambiente
-export DATA_FILE_PATH="$downloaded_file"
-echo "Percorso del file scaricato: $DATA_FILE_PATH"
 
-# Esegui il tuo script Python passando il percorso del file come argomento
+# Esegui script Python passando il percorso del file come argomento
 python3 ait_esame.py "$HOME/Desktop/Directory_esame"
 
 # Verifica lo stato di uscita dello script Python
